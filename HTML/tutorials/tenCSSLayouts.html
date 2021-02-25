@@ -1,0 +1,402 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>10 modern layouts in 1 line of CSS</title>
+        <link rel="stylesheet" href="../../CSS/tenCSSLayouts.css" />
+    </head>
+    <body>
+        <ul class="nav">
+            <li class="navli" id="tumlogo">
+                <a target="_blank" href="https://www.tum.de/">
+                    <img alt="Logo of the Technical University of Munich" src="../../assets/images/tum-logo.svg">
+                </a>
+            </li>
+            <li class="navli">
+                <a class="navlink" href="../../index.html">Home</a>
+            </li>
+            <li class="navli">
+                <a class="navlink" href="../tutorials.html">Tutorials</a>
+            </li>
+            <li class="navli">
+                <a class="navlink" href="../projects.html">Projects</a>
+            </li>
+            <li class="navli">
+                <a class="navlink" href="../resources.html">Resources</a>
+            </li>
+        </ul>
+        <div id="main">
+            <h1 id="caption" class="centeredtext">10 modern layouts in 1 line of CSS</h1>
+            <p class="centeredtext">
+                Play around with the different styles by changing the size of the demonstartion window.<br />
+                This site was created using the
+                <a target="_blank" href="https://1linelayouts.glitch.me/">1-Line-Layouts</a> tutorial and
+                it's corresponding Youtube-video:
+            </p>
+            <div id="tutorialvideo">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/qm0IfG1GyZU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div class="excontainer">
+                <h3>01. Super Centered</h3>
+                <p class="oneliner">
+                    place-items: center;
+                </p>
+                <div class="excontent">
+                    <div class="democontainer">
+                        <div id="ex1" class="green" contenteditable="">This is Text</div>
+                    </div>
+                    <div class="codesupersection">
+                        <div class="codesection">
+                            <div class="codecaption">CSS:</div>
+                            <div class="code">
+                                .container {<br />
+                                &nbsp;&nbsp;&nbsp;&nbsp;display: grid;<br />
+                                &nbsp;&nbsp;&nbsp;&nbsp;place-items: center;<br />
+                                }
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="excontainer">
+                <h3>02. The Deconstructed Pancake</h3>
+                <p class="oneliner">
+                    flex: 0 1 &lt;basewidth&gt;
+                </p>
+                <div class="excontent">
+                    <div class="democontainer">
+                        <div id="ex2">
+                            <div contenteditable>Item 1</div>
+                            <div contenteditable>Item 2</div>
+                            <div contenteditable>Item 3</div>
+                        </div>
+                    </div>
+                    <div class="codesupersection">
+                        <div class="codesection">
+                            <div class="codecaption">CSS:</div>
+                            <div class="code">
+                                .ex2 .parent {<br />
+                                &nbsp;&nbsp;&nbsp;&nbsp;display: flex;<br />
+                                &nbsp;&nbsp;&nbsp;&nbsp;flex-wrap: wrap;<br />
+                                &nbsp;&nbsp;&nbsp;&nbsp;justify-content: center;<br />
+                                }<br />
+                                <br />
+                                .ex2 .box {<br />
+                                &nbsp;&nbsp;&nbsp;&nbsp;flex: 1 1 150px; /*  Stretching: */<br />
+                                &nbsp;&nbsp;&nbsp;&nbsp;flex: 0 1 150px; /*  No stretching: */<br />
+                                &nbsp;&nbsp;&nbsp;&nbsp;margin: 5px;<br />
+                                }
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="excontainer">
+                <h3>03. Sidebar Says</h3>
+                <p class="oneliner">
+                    grid-templatecolumns: minmax(&lt;min&gt;, &lt;max&gt;) ...
+                </p>
+                <div class="excontent">
+                    <div class="democontainer">
+                        <div id="ex3">
+                            <div class="purple" contenteditable>Min: 150px / Max: 25%</div>
+                            <div class=" orange" contenteditable>This element takes the scond grid position (1fr), meaning it takes up the rest of the remaining space.</div>
+                        </div>
+                    </div>
+                    <div class="codesupersection">
+                        <div class="codesection">
+                            <div class="codecaption">
+                                CSS:</>
+                                <div class="code">
+                                    .ex3 .parent {<br />
+                                    &nbsp;&nbsp;&nbsp;&nbsp;display: grid;<br />
+                                    &nbsp;&nbsp;&nbsp;&nbsp;grid-template-columns: minmax(150px, 25%) 1fr;<br />
+                                    }
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="excontainer">
+                <h3>04. Pancake Stack</h3>
+                <p class="oneliner">
+                    grid-template-rows: auto 1fr auto;
+                </p>
+                <div class="excontent">
+                    <div class="democontainer">
+                        <div id="ex4">
+                            <div class="purple" contenteditable>Header</div>
+                            <div class="orange" contenteditable>Main Content</div>
+                            <div class="blue" contenteditable>Footer</div>
+                        </div>
+                    </div>
+                    <div class="codesupersection">
+                        <div class="codesection">
+                            <div class="codecaption">CSS:</div>
+                            <div class="code">
+                                .ex4 .parent {<br />
+                                &nbsp;&nbsp;&nbsp;&nbsp;display: grid; <br />
+                                &nbsp;&nbsp;&nbsp;&nbsp;grid-template-rows: auto 1fr auto;<br />
+                                }
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="excontainer">
+                <h3>05. Classic Holy Grail Layout</h3>
+                <p class="oneliner">
+                    grid-template: auto 1fr auto / auto 1fr auto;
+                </p>
+                <div class="excontent">
+                    <div class="democontainer">
+                        <div id="ex5">
+                            <div class="green" contenteditable>Header</div>
+                            <div class="purple" contenteditable>Left<br /> Sidebar</div>
+                            <div class="orange" contenteditable>Main<br /> Content</div>
+                            <div class="coral" contenteditable>Right<br /> Sidebar</div>
+                            <div class="blue" contenteditable>Footer</div>
+                        </div>
+                    </div>
+                    <div class="codesupersection">
+                        <div class="codesection">
+                            <div class="codecaption">CSS:</div>
+                            <div class="code">
+                                .ex5 .parent {<br />
+                                &nbsp;&nbsp;&nbsp;&nbsp;display: grid;<br />
+                                &nbsp;&nbsp;&nbsp;&nbsp;grid-template: auto 1fr auto / auto 1fr auto;<br />
+                                }<br />
+                                <br />
+                                .ex5 header {<br />
+                                &nbsp;&nbsp;&nbsp;&nbsp;padding: 2rem;<br />
+                                &nbsp;&nbsp;&nbsp;&nbsp;grid-column: 1 / 4;<br />
+                                }<br />
+                                <br />
+                                .ex5 main {<br />
+                                &nbsp;&nbsp;&nbsp;&nbsp;grid-column: 2 / 3;<br />
+                                }<br />
+                                <br />
+                                .ex5 .right-side {<br />
+                                &nbsp;&nbsp;&nbsp;&nbsp;grid-column: 3 / 4;<br />
+                                }<br />
+                                <br />
+                                .ex5 footer {<br />
+                                &nbsp;&nbsp;&nbsp;&nbsp;grid-column: 1 / 4;<br />
+                                }
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="excontainer">
+                <h3>06. 12-Span Grid</h3>
+                <p class="oneliner">
+                    grid-template-columns: repeat(12, 1fr);
+                </p>
+                <div class="excontent">
+                    <div class="democontainer">
+                        <div id="ex6">
+                            <div class="green" contenteditable>Span 12</div>
+                            <div class="coral" contenteditable>Span 6</div>
+                            <div class="blue" contenteditable>Span 4</div>
+                            <div class="orange" contenteditable>Span 2</div>
+                        </div>
+                    </div>
+                    <div class="codesupersection">
+                        <div class="codesection">
+                            <div class="codecaption">CSS:</div>
+                            <div class="code">
+                                .ex6 .parent {<br />
+                                &nbsp;&nbsp;&nbsp;&nbsp;display: grid;<br />
+                                &nbsp;&nbsp;&nbsp;&nbsp;grid-template-columns: repeat(12, 1fr);<br />
+                                }<br />
+                                <br />
+                                .ex6 .span-12 {<br />
+                                &nbsp;&nbsp;&nbsp;&nbsp;grid-column: 1 / span 12;<br />
+                                }<br />
+                                <br />
+                                .ex6 .span-6 {<br />
+                                &nbsp;&nbsp;&nbsp;&nbsp;grid-column: 2 / span 6;<br />
+                                }<br />
+                                <br />
+                                .ex6 .span-4 {<br />
+                                &nbsp;&nbsp;&nbsp;&nbsp;grid-column: 3 / span 4;<br />
+                                }<br />
+                                <br />
+                                .ex6 .span-2 {<br />
+                                &nbsp;&nbsp;&nbsp;&nbsp;grid-column: 4 / span 2;<br />
+                                }<br />
+                                <br />
+                                /* centering text */<br />
+                                .ex6 .section {<br />
+                                &nbsp;&nbsp;&nbsp;&nbsp;display: grid;<br />
+                                &nbsp;&nbsp;&nbsp;&nbsp;place-items: center;<br />
+                                &nbsp;&nbsp;&nbsp;&nbsp;text-allign: center;}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="excontainer">
+                <h3>07. RAM (Repeat, Auto, MinMax)</h3>
+                <p class="oneliner">
+                    grid-template-columns: repeat(auto-fit, minmax(&lt;base&gt;, 1fr));
+                </p>
+                <div class="excontent">
+                    <div class="democontainer">
+                        <div id="ex7">
+                            <div class="orange" contenteditable>Item 1</div>
+                            <div class="green" contenteditable>Item 2</div>
+                            <div class="coral" contenteditable>Item 3</div>
+                            <div class="blue" contenteditable>Item 4</div>
+                        </div>
+                    </div>
+                    <div class="codesupersection">
+                        <div class="codesection">
+                            <div class="codecaption">CSS:</div>
+                            <div class="code">
+                                .ex7 .parent {<br />
+                                &nbsp;&nbsp;&nbsp;&nbsp;display: grid;<br />
+                                &nbsp;&nbsp;&nbsp;&nbsp;grid-gap: 1rem;<br />
+                                &nbsp;&nbsp;&nbsp;&nbsp;grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));<br />
+                                }
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="excontainer">
+                <h3>08. Line Up</h3>
+                <p class="oneliner">
+                    justify-content: space-between;
+                </p>
+                <div class="excontent">
+                    <div class="democontainer">
+                        <div id="ex8">
+                            <div class="orange"><h3 contenteditable>Title - Card 1</h3>
+                                <p contenteditable>Medium length description with a few more words here.</p>
+                                <div class="coral visual"></div>
+                            </div>
+                            <div class="orange"><h3 contenteditable>Title - Card 3</h3>
+                                <p contenteditable>Long description. Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                                <div class="blue visual"></div>
+                            </div>
+                            <div class="orange"><h3 contenteditable>Title - Card 3</h3>
+                                <p contenteditable>Short description.</p>
+                                <div class="green visual"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="codesupersection">
+                        <div class="codesection">
+                            <div class="codecaption">CSS:</div>
+                            <div class="code">
+                                .ex8 .parent {<br />
+                                &nbsp;&nbsp;&nbsp;&nbsp;height: auto;<br />
+                                &nbsp;&nbsp;&nbsp;&nbsp;display: grid;<br />
+                                &nbsp;&nbsp;&nbsp;&nbsp;grid-gap: 1rem;<br />
+                                &nbsp;&nbsp;&nbsp;&nbsp;grid-template-columns: repeat(3, 1fr);<br />
+                                }<br />
+                                <br />
+                                .ex8 .visual {<br />
+                                &nbsp;&nbsp;&nbsp;&nbsp;height: 100px;<br />
+                                &nbsp;&nbsp;&nbsp;&nbsp;width: 100%;<br />
+                                }<br />
+                                <br />
+                                .ex8 .card {<br />
+                                &nbsp;&nbsp;&nbsp;&nbsp;display: flex;<br />
+                                &nbsp;&nbsp;&nbsp;&nbsp;flex-direction: column;<br />
+                                &nbsp;&nbsp;&nbsp;&nbsp;padding: 1rem; <br />
+                                &nbsp;&nbsp;&nbsp;&nbsp;justify-content: space-between;<br />
+                                }<br />
+                                <br />
+                                .ex8 h3 {<br />
+                                &nbsp;&nbsp;&nbsp;&nbsp;margin: 0<br />
+                                }
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="excontainer">
+                <h3>09. Clamping My Style</h3>
+                <p class="oneliner">
+                    clamp(&lt;min&gt;, &lt;actual&gt;, &lt;max&gt;);
+                </p>
+                <div class="excontent">
+                    <div class="democontainer">
+                        <div id="ex9">
+                            <div class="green"><h1 contenteditable>Title Here</h1>
+                                <div class="blue visual" contenteditable></div>
+                                <p contenteditable> Descriptive Text. Lorem ipsum dolor sit, amte consectetur adipisicing elit. Sed est error repellat veritatis.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="codesupersection">
+                        <div class="codesection">
+                            <div class="codecaption">CSS:</div>
+                            <div class="code">
+                                .ex9 .parent {<br />
+                                &nbsp;&nbsp;&nbsp;&nbsp;display: grid;<br />
+                                &nbsp;&nbsp;&nbsp;&nbsp;place-items: center;<br />
+                                }<br />
+                                <br />
+                                .ex9 .card {<br />
+                                &nbsp;&nbsp;&nbsp;&nbsp;width: clamp(23ch, 50%, 46ch);<br />
+                                &nbsp;&nbsp;&nbsp;&nbsp;display: flex;<br />
+                                &nbsp;&nbsp;&nbsp;&nbsp;flex-direction: column;<br />
+                                &nbsp;&nbsp;&nbsp;&nbsp;padding: 1rem;<br />
+                                }<br />
+                                <br />
+                                .ex9 .vidual {<br />
+                                &nbsp;&nbsp;&nbsp;&nbsp;height: 125px;<br />
+                                &nbsp;&nbsp;&nbsp;&nbsp;width: 100%;<br />
+                                }
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="excontainer">
+                <h3>10. Respect for Aspect</h3>
+                <p class="oneliner">
+                    aspect-ratio: &lt;width&gt; / &lt;height&gt;;
+                </p>
+                <div class="excontent">
+                    <div class="democontainer">
+                        <div id="ex10">
+                            <div class="orange">
+                                <h1 contenteditable>Video Title</h1>
+                                <div class="green visual"></div>
+                                <p contenteditable>Descrptive Test. This demo works in Chromium 84+.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="codesupersection">
+                        <div class="codesection">
+                            <div class="codecaption">CSS:</div>
+                            <div class="code">
+                                .ex10 .parent {<br />
+                                &nbsp;&nbsp;&nbsp;&nbsp;display: grid;<br />
+                                &nbsp;&nbsp;&nbsp;&nbsp;place-items: center;<br />
+                                }<br />
+                                <br />
+                                .ex10 .visual {<br />
+                                &nbsp;&nbsp;&nbsp;&nbsp;aspect-ratio: 16 / 9;<br />
+                                }<br />
+                                <br />
+                                .ex20 .card {<br />
+                                &nbsp;&nbsp;&nbsp;&nbsp;width: 50%;<br />
+                                &nbsp;&nbsp;&nbsp;&nbsp;display: flex;<br />
+                                &nbsp;&nbsp;&nbsp;&nbsp;flex-direction: column;<br />
+                                &nbsp;&nbsp;&nbsp;&nbsp;padding: 1rem;<br />
+                                }
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

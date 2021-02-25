@@ -1,0 +1,64 @@
+﻿body {
+    font-family: system-ui, sans-serif;
+}
+
+#caption {
+    margin-top: 50px;
+}
+
+.nav {
+    list-style-type: none;
+    background-color: #f4f4f4;
+    overflow: hidden;
+    height: 50px;
+    line-height: 50px;
+    margin: -8px -8px 0 -8px;
+    box-shadow: 5px 0 20px -10px hsl(187, 97%, 0%);
+    position: fixed;
+    z-index: 1;
+    width: 100%
+}
+
+.navlink {
+    text-decoration: none;
+    color: black;
+}
+
+.navli {
+    margin: 0 0 200px 0;
+    padding: 5px;
+    height: 100%;
+    float: left;
+}
+
+.navli:hover {
+    background-color: #e0e0e0;
+}
+
+#main {
+    display: grid;
+}
+
+#tumlogo {
+    padding: 5px;
+    position: relative;
+    right: 30px;
+    margin: 0px 15px 0px -10px;
+}
+
+.centeredtext {
+    text-align: center;
+}
+
+.squaredlist {
+    list-style-type: square;
+}
+
+.circledlist {
+    list-style-type: circla;
+}
+
+.centered {
+    width: 75%;
+    margin: 0 auto;
+}
