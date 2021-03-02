@@ -4,7 +4,6 @@
     <meta charset="utf-8" />
     <title>Sorting Algorithms Viszualization</title>
     <link rel="stylesheet" href="../CSS/sorting_algorithm_visualization.css" />
-    <script src="../scripts/sorting_algorithms_visualization.js"></script>
 </head>
 <body>
     <ul class="nav">
@@ -46,10 +45,10 @@
                 <button>Reset</button>
             </div>
             <div>
-                Animation Speed:
-                <div id="speed"></div>
-                <input type="range" min="1" max="10" value="5" class="slider" id="speedslider" />
+                Animation Speed: <span id="speed"></span>
+                <input type="range" min="1" max="10" value="5" id="speedslider">
             </div>
+            <script src="../scripts/sorting_algorithms_visualization.js"></script>
         </div>
         <!--
     TODO:

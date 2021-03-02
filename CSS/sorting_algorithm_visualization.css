@@ -111,3 +111,7 @@
     flex-direction: row;
     justify-content: space-evenly;
 }
+
+#speedslider {
+    margin: 0 0 0 25px;
+}
