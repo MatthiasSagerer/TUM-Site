@@ -115,3 +115,6 @@
 #speedslider {
     margin: 0 0 0 25px;
 }
+#canv {
+    border:1px solid #d3d3d3;
+}
