@@ -44,20 +44,23 @@
                 <button>Start</button>
                 <button>Reset</button>
             </div>
-            <div>
+            <div class="sliders">
+                Number of rectangles: <span id="rectCount"></span>
+                <input type="range" min="10" max="37" value="5" id="countslider">
+            </div>
+            <div class="sliders">
                 Animation Speed: <span id="speed"></span>
                 <input type="range" min="1" max="10" value="5" id="speedslider">
             </div>
             <script src="../scripts/sorting_algorithms_visualization.js"></script>
         </div>
         <div id="canvDiv">
-            <canvas id="canv" height="500" width="700"></canvas>
+            <canvas id="canv" height="500" width="800"></canvas>
         </div>
         <script src="../scripts/sorting_algorithms_visualization.js"></script>
         <!--
     TODO:
-        - displaying rectangles on Screen
-        - create rectangle Class
+        - connecting countslider to js
         - Initialize rectangles in random order
         - randomize them with reset
         - research different algorithms (http://sorting.at/)
