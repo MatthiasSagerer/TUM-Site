@@ -6,6 +6,9 @@ var speedslider = document.getElementById("speedslider");
 var speed = document.getElementById("speed");
 speed.innerHTML = speedslider.value;
 
+var canvas2D = document.getElementById('canv');
+var ctx = canvas2D.getContext('2d');
+
 var heights = []
 var element_count = 15;
 var height_diff = 10;
@@ -32,12 +35,12 @@ function initHeightsArray(size) {
 countslider.oninput = function () {
     rect_count.innerHTML = this.value;
     element_count = this.value;
-    ctx.clearRect(0, 0, canvas.width, canvas.height);
     heights = initHeightsArray(this.value);
     drawRects(heights, ctx);
 }
 
 function drawRects(array, context) {
+    ctx.clearRect(0, 0, canvas2D.width, canvas2D.height);
     for (i = 0; i < array.length; i++) {
         context.fillRect(400 + (2 * i - array.length + 0.5) * width, (element_count - array[i]) * height_diff + 30, width, height_diff * array[i]);
     }
@@ -45,8 +48,38 @@ function drawRects(array, context) {
 
 function randomizeButton() {
     shuffleArray(heights);
-    ctx.clearRect(0, 0, canvas.width, canvas.height);
     drawRects(heights, ctx);
+}
+
+function swap(array, i, j) {
+    const temp = array[i];
+    array[i] = array[j];
+    array[j] = temp;
+}
+
+function sleep(miliseconds) {
+    const date = Date.now();
+    let currentDate = null;
+    do {
+        currentDate = Date.now();
+    } while (currentDate - date < miliseconds);
+}
+
+function bubbleSort(miliseconds) {
+    for (i = heights.length; i > 1; --i) {
+        for (j = 0; j < i - 1; ++j) {
+            if (heights[j] > heights[j + 1]) {
+                swap(heights, j, j + 1);
+                console.log(heights);
+                sleep(miliseconds);
+                drawRects(heights, ctx);
+            }
+        }
+    }
+}
+
+function sort() {
+    bubbleSort(200);
 }
 
 // initialize heigts array
@@ -55,8 +88,5 @@ heights = initHeightsArray(15)
 speedslider.oninput = function () {
     speed.innerHTML = this.value;
 }
-
-var canvas = document.getElementById('canv');
-var ctx = canvas.getContext('2d');
 
 drawRects(heights, ctx);
