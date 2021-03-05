@@ -35,13 +35,18 @@ countslider.oninput = function () {
     ctx.clearRect(0, 0, canvas.width, canvas.height);
     heights = initHeightsArray(this.value);
     drawRects(heights, ctx);
-    console.log(element_count);
 }
 
 function drawRects(array, context) {
     for (i = 0; i < array.length; i++) {
         context.fillRect(400 + (2 * i - array.length + 0.5) * width, (element_count - array[i]) * height_diff + 30, width, height_diff * array[i]);
     }
+}
+
+function randomizeButton() {
+    shuffleArray(heights);
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+    drawRects(heights, ctx);
 }
 
 // initialize heigts array
