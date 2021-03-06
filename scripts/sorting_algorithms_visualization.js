@@ -41,9 +41,18 @@ countslider.oninput = function () {
 
 function drawRects(array, context) {
     ctx.clearRect(0, 0, canvas2D.width, canvas2D.height);
+    console.log('In draw: ' + array);
     for (i = 0; i < array.length; i++) {
+        console.log(array[i]);
         context.fillRect(400 + (2 * i - array.length + 0.5) * width, (element_count - array[i]) * height_diff + 30, width, height_diff * array[i]);
     }
+}
+
+function clear() {
+    console.log('Test');
+    canvas2D = document.getElementById('canv');
+    ctx = canvas2D.getContext('2d');
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
 }
 
 function randomizeButton() {
@@ -66,13 +75,14 @@ function sleep(miliseconds) {
 }
 
 function bubbleSort(miliseconds) {
+    temp = []
     for (i = heights.length; i > 1; --i) {
         for (j = 0; j < i - 1; ++j) {
             if (heights[j] > heights[j + 1]) {
                 swap(heights, j, j + 1);
-                console.log(heights);
-                sleep(miliseconds);
+                console.log('In Sort: ' + heights);
                 drawRects(heights, ctx);
+                sleep(miliseconds);
             }
         }
     }
