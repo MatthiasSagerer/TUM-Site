@@ -88,6 +88,14 @@ function bubbleSort(miliseconds) {
     }
 }
 
+function quickSort(miliseconds) {
+    // TODO: Adding Quick Sort algorithm
+}
+
+function mergeSort(miliseconds) {
+    // TODO: Adding Merge Sort Algorithm
+}
+
 function sort() {
     bubbleSort(200);
 }
