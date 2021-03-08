@@ -31,6 +31,7 @@ function initHeightsArray(size) {
     }
     return arr
 }
+heights = initHeightsArray(15)
 
 countslider.oninput = function () {
     rect_count.innerHTML = this.value;
@@ -38,6 +39,12 @@ countslider.oninput = function () {
     heights = initHeightsArray(this.value);
     drawRects(heights, ctx);
 }
+
+speedslider.oninput = function () {
+    speed.innerHTML = this.value;
+}
+
+drawRects(heights, ctx);
 
 function drawRects(array, context) {
     ctx.clearRect(0, 0, canvas2D.width, canvas2D.height);
@@ -96,15 +103,50 @@ function mergeSort(miliseconds) {
     // TODO: Adding Merge Sort Algorithm
 }
 
+function headSort(miliseconds) {
+    // TODO: Adding Head Sort Algorithm
+}
+
+function smoothSort(miliseconds) {
+    // TODO: Adding Smooth Sort Algorithm
+}
+
+function shellSort(miliseconds) {
+    // TODO: Adding Shell Sort Algorithm
+}
+
+function cycleSort(miliseconds) {
+    // TODO: Adding Cycle Sort Algorithm
+}
+
+function selectionSort(miliseconds) {
+    // TODO: Adding Selection Sort Algorithm
+}
+
+function insertionSort(miliseconds) {
+    // TODO: Adding Insertion Sort Algorithm
+}
+
+function gnomeSort(miliseconds) {
+    // TODO: Adding Gnome Sort Algorithm
+}
+
+function combSort(miliseconds) {
+    // TODO: Adding Comb Sort Algorithm
+}
+
+function cocktailSort(miliseconds) {
+    // TODO: Adding Cocktail Sort Algorithm
+}
+
+function oddevenSort(miliseconds) {
+    // TODO: Adding Oddeven Sort Algorithm
+}
+
+function radixSort(miliseconds) {
+    // TODO: Adding Radix Sort Algorithm
+}
+
 function sort() {
     bubbleSort(200);
 }
-
-// initialize heigts array
-heights = initHeightsArray(15)
-
-speedslider.oninput = function () {
-    speed.innerHTML = this.value;
-}
-
-drawRects(heights, ctx);
