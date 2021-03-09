@@ -13,6 +13,7 @@ var heights = []
 var element_count = 15;
 var height_diff = 10;
 var width = 10;
+var algorithm = '';
 
 // Durstenfeld Shuffle Algorithm
 function shuffleArray(array) {
@@ -73,15 +74,15 @@ function swap(array, i, j) {
     array[j] = temp;
 }
 
-function sleep(miliseconds) {
+function sleep(milliseconds) {
     const date = Date.now();
     let currentDate = null;
     do {
         currentDate = Date.now();
-    } while (currentDate - date < miliseconds);
+    } while (currentDate - date < milliseconds);
 }
 
-function bubbleSort(miliseconds) {
+function bubbleSort(milliseconds) {
     temp = []
     for (i = heights.length; i > 1; --i) {
         for (j = 0; j < i - 1; ++j) {
@@ -89,64 +90,171 @@ function bubbleSort(miliseconds) {
                 swap(heights, j, j + 1);
                 console.log('In Sort: ' + heights);
                 drawRects(heights, ctx);
-                sleep(miliseconds);
+                sleep(milliseconds);
             }
         }
     }
 }
 
-function quickSort(miliseconds) {
-    // TODO: Adding Quick Sort algorithm
+function quickSort(milliseconds) {
+    console.log('Quick');
 }
+    // TODO: Adding Quick Sort algorithm
 
-function mergeSort(miliseconds) {
+function mergeSort(milliseconds) {
+    console.log('Merge');
     // TODO: Adding Merge Sort Algorithm
 }
 
-function headSort(miliseconds) {
+function heapSort(milliseconds) {
+    console.log('Heap');
     // TODO: Adding Head Sort Algorithm
 }
 
-function smoothSort(miliseconds) {
+function smoothSort(milliseconds) {
+    console.log('Smooth');
     // TODO: Adding Smooth Sort Algorithm
 }
 
-function shellSort(miliseconds) {
+function shellSort(milliseconds) {
+    console.log('Shell');
     // TODO: Adding Shell Sort Algorithm
 }
 
-function cycleSort(miliseconds) {
+function cycleSort(milliseconds) {
+    console.log('Cycle');
     // TODO: Adding Cycle Sort Algorithm
 }
 
-function selectionSort(miliseconds) {
+function selectionSort(milliseconds) {
+    console.log('Selection');
     // TODO: Adding Selection Sort Algorithm
 }
 
-function insertionSort(miliseconds) {
+function insertionSort(milliseconds) {
+    console.log('Insertion');
     // TODO: Adding Insertion Sort Algorithm
 }
 
-function gnomeSort(miliseconds) {
+function gnomeSort(milliseconds) {
+    console.log('Gnome');
     // TODO: Adding Gnome Sort Algorithm
 }
 
-function combSort(miliseconds) {
+function combSort(milliseconds) {
+    console.log('Comb');
     // TODO: Adding Comb Sort Algorithm
 }
 
-function cocktailSort(miliseconds) {
+function cocktailSort(milliseconds) {
+    console.log('Cocktail');
     // TODO: Adding Cocktail Sort Algorithm
 }
 
-function oddevenSort(miliseconds) {
+function oddevenSort(milliseconds) {
+    console.log('Oddeven');
     // TODO: Adding Oddeven Sort Algorithm
 }
 
-function radixSort(miliseconds) {
+function radixSort(milliseconds) {
+    console.log('Radix');
     // TODO: Adding Radix Sort Algorithm
 }
 
-function sort() {
-    bubbleSort(200);
+function selectAlgorithm(num) {
+    switch (num) {
+        case 1:
+            algorithm = 'Bubble';
+            break;
+        case 2:
+            algorithm = 'Quick';
+            break;
+        case 3:
+            algorithm = 'Merge';
+            break;
+        case 4:
+            algorithm = 'Heap';
+            break;
+        case 5:
+            algorithm = 'Smooth';
+            break;
+        case 6:
+            algorithm = 'Shell';
+            break;
+        case 7:
+            algorithm = 'Cycle';
+            break;
+        case 8:
+            algorithm = 'Selection';
+            break;
+        case 9:
+            algorithm = 'Insertion';
+            break;
+        case 10:
+            algorithm = 'Gnome';
+            break;
+        case 11:
+            algorithm = 'Comb';
+            break;
+        case 12:
+            algorithm = 'Cocktail';
+            break;
+        case 13:
+            algorithm = 'Oddeven';
+            break;
+        case 14:
+            algorithm = 'Radix';
+            break;
+    }
+    document.getElementById('algorithm').innerHTML = algorithm + ' Sort';
+}
+
+function sort(millisecs) {
+    switch (algorithm) {
+        case 'Bubble':
+            bubbleSort(millisecs);
+            break;
+        case 'Quick':
+            quickSort(millisecs);
+            break;
+        case 'Merge':
+            mergeSort(millisecs);
+            break;
+        case 'Heap':
+            heapSort(millisecs);
+            break;
+        case 'Smooth':
+            smoothSort(millisecs);
+            break;
+        case 'Shell':
+            shellSort(millisecs);
+            break;
+        case 'Cycle':
+            cycleSort(millisecs);
+            break;
+        case 'Selection':
+            selectionSort(millisecs);
+            break;
+        case 'Insertion':
+            insertionSort(millisecs);
+            break;
+        case 'Gnome':
+            gnomeSort(millisecs);
+            break;
+        case 'Comb':
+            combSort(millisecs);
+            break;
+        case 'Cocktail':
+            cocktailSort(millisecs);
+            break;
+        case 'Oddeven':
+            oddevenSort(millisecs);
+            break;
+        case 'Radix':
+            radixSort(millisecs);
+            break;
+        default:
+            bubbleSort(millisecs);
+            break;
+    }
 }

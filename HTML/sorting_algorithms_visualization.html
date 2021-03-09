@@ -32,26 +32,26 @@
         </p>
         <div id="settings">
             <div class="dropdown">
-                <button class="drowbtn">Choose the Algorithm</button>
+                <button class="drowbtn" id="algorithm">Choose the Algorithm</button>
                 <div class="dropdown-content">
-                    <a href="#">Bubble Sort</a>
-                    <a href="#">Quick Sort</a>
-                    <a href="#">Merge Sort</a>
-                    <a href="#">Heap Sort</a>
-                    <a href="#">Smooth Sort</a>
-                    <a href="#">Shell Sort</a>
-                    <a href="#">Cycle Sort</a>
-                    <a href="#">Selection Sort</a>
-                    <a href="#">Insertion Sort</a>
-                    <a href="#">Gnome Sort</a>
-                    <a href="#">Comb Sort</a>
-                    <a href="#">Cocktail Sort</a>
-                    <a href="#">Oddeven Sort</a>
-                    <a href="#">Radix Sort</a>
+                    <button onclick="selectAlgorithm(1);">Bubble Sort</button>
+                    <button onclick="selectAlgorithm(2);">Quick Sort</button>
+                    <button onclick="selectAlgorithm(3);">Merge Sort</button>
+                    <button onclick="selectAlgorithm(4);">Heap Sort</button>
+                    <button onclick="selectAlgorithm(5);">Smooth Sort</button>
+                    <button onclick="selectAlgorithm(6);">Shell Sort</button>
+                    <button onclick="selectAlgorithm(7);">Cycle Sort</button>
+                    <button onclick="selectAlgorithm(8);">Selection Sort</button>
+                    <button onclick="selectAlgorithm(9);">Insertion Sort</button>
+                    <button onclick="selectAlgorithm(10);">Gnome Sort</button>
+                    <button onclick="selectAlgorithm(11);">Comb Sort</button>
+                    <button onclick="selectAlgorithm(12);">Cocktail Sort</button>
+                    <button onclick="selectAlgorithm(13);">Oddeven Sort</button>
+                    <button onclick="selectAlgorithm(14);">Radix Sort</button>
                 </div>
             </div>
             <div>
-                <button onclick="sort()">Start</button>
+                <button onclick="sort(200)">Start</button>
                 <button onclick="randomizeButton()">Randomize</button>
                 <button onclick="clear()">Test</button>
             </div>
