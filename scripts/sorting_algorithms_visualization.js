@@ -51,16 +51,12 @@ function drawRects(array, context) {
     ctx.clearRect(0, 0, canvas2D.width, canvas2D.height);
     console.log('In draw: ' + array);
     for (i = 0; i < array.length; i++) {
-        console.log(array[i]);
         context.fillRect(400 + (2 * i - array.length + 0.5) * width, (element_count - array[i]) * height_diff + 30, width, height_diff * array[i]);
     }
 }
 
-function clear() {
-    console.log('Test');
-    canvas2D = document.getElementById('canv');
-    ctx = canvas2D.getContext('2d');
-    ctx.clearRect(0, 0, canvas.width, canvas.height);
+function clearCanv() {
+    ctx.clearRect(0, 0, canvas2D.width, canvas2D.height);
 }
 
 function randomizeButton() {
@@ -88,9 +84,9 @@ function bubbleSort(milliseconds) {
         for (j = 0; j < i - 1; ++j) {
             if (heights[j] > heights[j + 1]) {
                 swap(heights, j, j + 1);
-                console.log('In Sort: ' + heights);
-                drawRects(heights, ctx);
-                sleep(milliseconds);
+                sleep(200);
+                ctx.clearRect(0, 0, canvas2D.width, canvas2D.height);
+                console.log(heights);
             }
         }
     }
@@ -99,7 +95,7 @@ function bubbleSort(milliseconds) {
 function quickSort(milliseconds) {
     console.log('Quick');
 }
-    // TODO: Adding Quick Sort algorithm
+// TODO: Adding Quick Sort algorithm
 
 function mergeSort(milliseconds) {
     console.log('Merge');
@@ -133,7 +129,16 @@ function selectionSort(milliseconds) {
 
 function insertionSort(milliseconds) {
     console.log('Insertion');
-    // TODO: Adding Insertion Sort Algorithm
+    i = 1
+    while (i < heights.length) {
+        j = 1
+        while ((j > 0) && (heights[j - 1] > heights[j])) {
+            swap(heights, j, j - 1);
+            j -= 1;
+        }
+        i += 1;
+    }
+
 }
 
 function gnomeSort(milliseconds) {
