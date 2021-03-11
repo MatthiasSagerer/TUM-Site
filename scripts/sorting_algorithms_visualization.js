@@ -51,7 +51,7 @@ function drawRects(array, context) {
     ctx.clearRect(0, 0, canvas2D.width, canvas2D.height);
     console.log('In draw: ' + array);
     for (i = 0; i < array.length; i++) {
-        context.fillRect(400 + (2 * i - array.length + 0.5) * width, (element_count - array[i]) * height_diff + 30, width, height_diff * array[i]);
+        context.fillRect(400 + (1.75 * i - array.length*0.875 + 0.5) * width, (element_count - array[i]) * height_diff + 30, width, height_diff * array[i]);
     }
 }
 
