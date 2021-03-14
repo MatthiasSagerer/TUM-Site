@@ -98,14 +98,12 @@
     <Content Include="CSS\files.css" />
     <Content Include="CSS\index.css" />
     <Content Include="CSS\resources.css" />
-    <Content Include="CSS\sorting_algorithm_visualization.css" />
+    <Content Include="CSS\sort_algos_visual.css" />
     <Content Include="CSS\tenCSSLayouts.css" />
-    <Content Include="CSS\tutorials.css" />
     <Content Include="HTML\projects.html" />
     <Content Include="HTML\resources.html" />
-    <Content Include="HTML\sorting_algorithms_visualization.html" />
-    <Content Include="HTML\tutorials\tenCSSLayouts.html" />
-    <Content Include="HTML\tutorials.html" />
+    <Content Include="HTML\sort_algos_visual.html" />
+    <Content Include="HTML\tenCSSLayouts.html" />
     <Content Include="index.html" />
     <Content Include="scripts\sorting_algorithms_visualization.js" />
     <Content Include="Web.config" />
