@@ -51,7 +51,7 @@ function drawRects(array, context) {
     ctx.clearRect(0, 0, canvas2D.width, canvas2D.height);
     console.log('In draw: ' + array);
     for (i = 0; i < array.length; i++) {
-        context.fillRect(400 + (1.75 * i - array.length*0.875 + 0.5) * width, (element_count - array[i]) * height_diff + 30, width, height_diff * array[i]);
+        context.fillRect(400 + (1.75 * i - array.length * 0.875 + 0.5) * width, (element_count - array[i]) * height_diff + 30, width, height_diff * array[i]);
     }
 }
 
@@ -79,6 +79,7 @@ function sleep(milliseconds) {
 }
 
 function bubbleSort(milliseconds) {
+    console.log('Bubble')
     temp = []
     for (i = heights.length; i > 1; --i) {
         for (j = 0; j < i - 1; ++j) {
@@ -119,7 +120,40 @@ function shellSort(milliseconds) {
 
 function cycleSort(milliseconds) {
     console.log('Cycle');
-    // TODO: Adding Cycle Sort Algorithm
+    // writes = 0;
+    for (var cycle_start = 0; cycle_start < heights.length; cycle_start++) {
+        item = heights[cycle_start];
+        pos = cycle_start;
+        for (var i = cycle_start + 1; i <= heights.length; i++) {
+            if (heights[i] < item) {
+                pos += 1;
+            }
+        }
+        if (pos == cycle_start) {
+            continue;
+        }
+        while (item == heights[pos]) {
+            pos += 1;
+        }
+        heights[pos], item = item, heights[pos];
+        // writes += 1;
+        while (pos != cycle_start) {
+            pos = cycle_start;
+            for (var i = cycle_start + 1; i <= heights.length; i++) {
+                if (heights[i] < item) {
+                    pos += 1;
+                }
+            }
+            while (item == heights[pos]) {
+                pos += 1;
+            }
+            heights[pos], item = item, heights[pos]
+            // writes += 1;
+        }
+        console.log(array);
+        sleep(milliseconds);
+    }
+    // return writes
 }
 
 function selectionSort(milliseconds) {
@@ -138,7 +172,6 @@ function insertionSort(milliseconds) {
         }
         i += 1;
     }
-
 }
 
 function gnomeSort(milliseconds) {
