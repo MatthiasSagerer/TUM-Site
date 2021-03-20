@@ -105,6 +105,8 @@
     <Content Include="HTML\sort_algos_visual.html" />
     <Content Include="HTML\tenCSSLayouts.html" />
     <Content Include="index.html" />
+    <Content Include="scripts\projects.js" />
+    <Content Include="scripts\resources.js" />
     <Content Include="scripts\sorting_algorithms_visualization.js" />
     <Content Include="Web.config" />
   </ItemGroup>
