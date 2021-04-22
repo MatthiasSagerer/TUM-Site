@@ -2,6 +2,8 @@
 var rect_count = document.getElementById("rectCount");
 rect_count.innerHTML = countslider.value;
 
+// TODO: connect speed variable to the waiting time for the sorting algorithms
+//       higher speed -> lower waiting time (e.g. inverse, linear with neg. slope, quadradic or exp with neg exponent)
 var speedslider = document.getElementById("speedslider");
 var speed = document.getElementById("speed");
 speed.innerHTML = speedslider.value;
@@ -77,7 +79,7 @@ function sleep(milliseconds) {
         currentDate = Date.now();
     } while (currentDate - date < milliseconds);
 }
-
+// bug fix: animation
 function bubbleSort(milliseconds) {
     console.log('Bubble')
     temp = []
@@ -117,7 +119,8 @@ function shellSort(milliseconds) {
     console.log('Shell');
     // TODO: Adding Shell Sort Algorithm
 }
-
+// bug fix: animation
+// bug fix: sorting algorithm
 function cycleSort(milliseconds) {
     console.log('Cycle');
     // writes = 0;
@@ -160,7 +163,7 @@ function selectionSort(milliseconds) {
     console.log('Selection');
     // TODO: Adding Selection Sort Algorithm
 }
-
+// bug fix: animation
 function insertionSort(milliseconds) {
     console.log('Insertion');
     i = 1
