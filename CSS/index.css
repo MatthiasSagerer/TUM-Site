@@ -96,3 +96,12 @@
 #credit {
   font-size: 10px;
 }
+
+.footer-icon {
+  width: 40px;
+  margin: 10px 50px;
+}
+
+#social-links {
+  display: flex;
+}
