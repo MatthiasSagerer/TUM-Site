@@ -90,8 +90,9 @@
   width: 100%;
   padding: 0 0 10px 0;
   background-color: #ebf2ff;
+  font-size: 28px;
 }
 
 #credit {
-  font-size: 12px;
+  font-size: 10px;
 }
