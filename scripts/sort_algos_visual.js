@@ -3,7 +3,7 @@ var rect_count = document.getElementById("rectCount");
 rect_count.innerHTML = countslider.value;
 
 // TODO: connect speed variable to the waiting time for the sorting algorithms
-//       higher speed -> lower waiting time (e.g. inverse, linear with neg. slope, quadradic or exp with neg exponent)
+//       higher speed -> lower waiting time (e.g. inverse, linear with neg. slope, quadratic or exp with neg exponent)
 var speedslider = document.getElementById("speedslider");
 var speed = document.getElementById("speed");
 speed.innerHTML = speedslider.value;
