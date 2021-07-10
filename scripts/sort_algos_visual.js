@@ -57,21 +57,25 @@ function drawRects(array, context) {
     }
 }
 
+// empty canvas
 function clearCanv() {
     ctx.clearRect(0, 0, canvas2D.width, canvas2D.height);
 }
 
+// shuffle and draw array
 function randomizeButton() {
     shuffleArray(heights);
     drawRects(heights, ctx);
 }
 
+// swap two elements of a list
 function swap(array, i, j) {
     const temp = array[i];
     array[i] = array[j];
     array[j] = temp;
 }
 
+// wait ... milliseconds
 function sleep(milliseconds) {
     const date = Date.now();
     let currentDate = null;
@@ -202,6 +206,7 @@ function radixSort(milliseconds) {
     // TODO: Adding Radix Sort Algorithm
 }
 
+// select sort algorithm according to dropdown menu
 function selectAlgorithm(num) {
     switch (num) {
         case 1:
@@ -250,6 +255,7 @@ function selectAlgorithm(num) {
     document.getElementById('algorithm').innerHTML = algorithm + ' Sort';
 }
 
+// sort the array
 function sort(millisecs) {
     switch (algorithm) {
         case 'Bubble':
