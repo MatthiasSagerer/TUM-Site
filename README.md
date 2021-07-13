@@ -13,8 +13,8 @@ There, you can find the things I picked up in tutorials, some of my self-written
 # Some of my projects:
 - Sudoku Application ([GitHub repository](https://github.com/MatthiasSagerer/Sudoku-Pygame))
 
-![Welcome Screen of Sudoku Application](assets/project_screenshots/sudoku_screenshots/Sudoku_welcome_screen.png "Sudoku Welcome Screen")
-![Game Screen of Sudoku Application](assets/project_screenshots/sudoku_screenshots/Sudoku_game_screen.png "Sudoku Game Screen")
+![Welcome Screen of Sudoku Application](assets/project_screenshots/sudoku_screenshots/Sudoku_welcome_screen_13_07_21.png "Sudoku Welcome Screen")
+![Game Screen of Sudoku Application](assets/project_screenshots/sudoku_screenshots/Sudoku_game_screen_13_07_21.png "Sudoku Game Screen")
 
 
 - Calculator "BasicCalc" as a mobile application (see [GitHub repository](https://github.com/MatthiasSagerer/BasicCalculatorApp) and [Play Store entry](https://play.google.com/store/apps/details?id=com.matze.taschenrechner))
