@@ -18,3 +18,22 @@ There, you can find the things I picked up in tutorials, some of my self-written
 
 
 - Calculator "BasicCalc" as a mobile application (see [GitHub repository](https://github.com/MatthiasSagerer/BasicCalculatorApp) and [Play Store entry](https://play.google.com/store/apps/details?id=com.matze.taschenrechner))
+
+
+<!-- 
+
+TODO: add more info for the sudoku
+
+TODO: complete list item for basicCalc
+    - make screenshots
+    - upload screenshots
+    - include screenshots in README.md
+    - provide further information on the project
+
+TODO: add list item for black-jack-commandline
+    - make screenshots
+    - upload screenshots
+    - include screenshots in README.md
+    - provide further information on the project
+
+ -->
