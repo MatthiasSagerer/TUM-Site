@@ -2,6 +2,13 @@
   font-family: system-ui, sans-serif;
 }
 
+#main {
+  max-width: 950px;
+  margin: auto;
+  background: white;
+  padding: 10px;
+}
+
 .centered {
   width: 75%;
   margin: 0 auto;
@@ -40,11 +47,6 @@
   background-color: #e0e0e0;
 }
 
-#main {
-  display: grid;
-  place-items: center;
-}
-
 #tumlogo {
   padding: 5px;
   position: relative;
@@ -72,8 +74,8 @@
 }
 
 .icon-link-div:hover {
-    background-color: #f4f4f4;
-    box-shadow: 0 0 25px -10px hsl(187, 97%, 0%);
+  background-color: #f4f4f4;
+  box-shadow: 0 0 25px -10px hsl(187, 97%, 0%);
 }
 
 .icon-link {
@@ -104,6 +106,7 @@
 
 #social-links {
   display: flex;
+  justify-content: center;
 }
 
 .footer-icon:hover {
