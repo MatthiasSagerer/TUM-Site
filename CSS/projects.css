@@ -70,6 +70,7 @@
 #social-links {
   display: flex;
   justify-content: center;
+  margin-top: 125px;
 }
 
 .footer-icon:hover {

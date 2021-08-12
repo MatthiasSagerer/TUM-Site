@@ -1,111 +1,130 @@
 ﻿body {
-    font-family: system-ui, sans-serif;
+  font-family: system-ui, sans-serif;
 }
 
 #caption {
-    margin-top: 50px;
+  margin-top: 50px;
 }
 
 .nav {
-    list-style-type: none;
-    background-color: #f4f4f4;
-    overflow: hidden;
-    height: 50px;
-    line-height: 50px;
-    margin: -8px -8px 0 -8px;
-    box-shadow: 5px 0 20px -10px hsl(187, 97%, 0%);
-    position: fixed;
-    z-index: 1;
-    width: 100%
+  list-style-type: none;
+  background-color: #f4f4f4;
+  overflow: hidden;
+  height: 50px;
+  line-height: 50px;
+  margin: -8px -8px 0 -8px;
+  box-shadow: 5px 0 20px -10px hsl(187, 97%, 0%);
+  position: fixed;
+  z-index: 1;
+  width: 100%;
 }
 
 .navlink {
-    text-decoration: none;
-    color: black;
+  text-decoration: none;
+  color: black;
 }
 
 .navli {
-    margin: 0 0 200px 0;
-    padding: 5px;
-    height: 100%;
-    float: left;
+  margin: 0 0 200px 0;
+  padding: 5px;
+  height: 100%;
+  float: left;
 }
 
-    .navli:hover {
-        background-color: #e0e0e0;
-    }
+.navli:hover {
+  background-color: #e0e0e0;
+}
 
 #main {
-    display: grid;
-    place-items: center;
+  display: grid;
+  place-items: center;
 }
 
 #tumlogo {
-    padding: 5px;
-    position: relative;
-    right: 30px;
-    margin: 0px 15px 0px -10px;
+  padding: 5px;
+  position: relative;
+  right: 30px;
+  margin: 0px 15px 0px -10px;
 }
 
 .centered-text {
-    text-align: center;
+  text-align: center;
 }
 
 .squaredlist {
-    list-style-type: square;
+  list-style-type: square;
 }
 
 .centered {
-    width: 75%;
-    margin: 0 auto;
+  width: 75%;
+  margin: 0 auto;
 }
 
 #intro {
-    width: 75%;
-    margin: 0 auto 20px;
+  width: 75%;
+  margin: 0 auto 20px;
 }
 
 /* Accordion start here source: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_accordion_symbol */
 
 .accordion {
-    background-color: #eee;
-    color: #444;
-    cursor: pointer;
-    padding: 18px;
-    width: 100%;
-    border: none;
-    text-align: left;
-    outline: none;
-    font-size: 15px;
-    transition: 0.4s;
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
 }
 
-    .active, .accordion:hover {
-        background-color: #ccc;
-    }
+.active,
+.accordion:hover {
+  background-color: #ccc;
+}
 
-    .accordion:after {
-        content: '\002B';
-        color: #777;
-        font-weight: bold;
-        float: right;
-        margin-left: 5px;
-    }
+.accordion:after {
+  content: "\002B";
+  color: #777;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
 
 .active:after {
-    content: "\2212";
+  content: "\2212";
 }
 
 .panel {
-    padding: 0 18px;
-    background-color: white;
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.2s ease-out;
+  padding: 0 18px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
 }
 
 /* Accordion ends here */
 
 #list-of-resources {
-    width: 70%;
+  width: 70%;
+}
+
+.footer-icon {
+  width: 40px;
+  margin: 30px 60px;
+}
+
+#social-links {
+  display: flex;
+  justify-content: center;
+  margin-top: 125px;
+}
+
+.footer-icon:hover {
+  width: 44px;
+  margin: 28px 58px;
+  background-color: #f4f4f4;
+  box-shadow: 0 0 25px -10px hsl(187, 97%, 0%);
 }
