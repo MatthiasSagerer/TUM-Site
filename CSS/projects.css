@@ -49,8 +49,8 @@
 
 footer {
   background-color: hsl(57, 95%, 77%);
-  margin: 75px -10px -16px -10px;
-  padding: 20px;
+  margin: 75px -10px -10px -10px;
+  padding: 50px 40px 40px 40px;
   display: flex;
   align-items: center;
   justify-content: center;

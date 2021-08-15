@@ -8,61 +8,61 @@
 </head>
 
 <body>
-    <!-- navigation bar on the top -->
-    <ul class="nav">
-        <li class="navli" id="tumlogo">
-            <a target="_blank" href="https://www.tum.de/">
-                <img alt="Logo of the Technical University of Munich" src="assets/images/tum-logo.svg">
-            </a>
-        </li>
-        <li class="navli">
-            <a class="navlink" href="index.html">Home</a>
-        </li>
-        <li class="navli">
-            <a class="navlink" href="HTML/projects.html">Projects</a>
-        </li>
-        <li class="navli">
-            <a class="navlink" href="HTML/resources.html">Resources</a>
-        </li>
-    </ul>
-    <div id="main">
-        <!-- short description of the site -->
-        <h1 id="caption" class="centered">Hello World!</h1>
-        <div>
-            <p class="centered">
-                My name is Matze and I'm a physics bachelor student at TUM.
-                <br />Welcome to the site, where I'll share my journey of exploring my new passion for programming.
-                <br />Here, you can find the things I picked up in tutorials, some of my self-written projects
-                and the resources, that I used to teach myself coding.
-            </p>
-        </div>
-        <!-- links to the subsites resources, projects -->
-        <div class="icon-links-div">
-            <div class="icon-link-div">
-                <a href="HTML/projects.html" class="icon-link">
-                    <div>
+    <div id="page-container">
+        <!-- navigation bar on the top -->
+        <ul class="nav">
+            <li class="navli" id="tumlogo">
+                <a target="_blank" href="https://www.tum.de/">
+                    <img alt="Logo of the Technical University of Munich" src="assets/images/tum-logo.svg">
+                </a>
+            </li>
+            <li class="navli">
+                <a class="navlink" href="index.html">Home</a>
+            </li>
+            <li class="navli">
+                <a class="navlink" href="HTML/projects.html">Projects</a>
+            </li>
+            <li class="navli">
+                <a class="navlink" href="HTML/resources.html">Resources</a>
+            </li>
+        </ul>
+        <div id="main">
+            <!-- short description of the site -->
+            <h1 id="caption" class="centered">Hello World!</h1>
+            <div>
+                <p class="centered">
+                    My name is Matze and I'm a physics bachelor student at TUM.
+                    <br />Welcome to the site, where I'll share my journey of exploring my new passion for programming.
+                    <br />Here, you can find the things I picked up in tutorials, some of my self-written projects
+                    and the resources, that I used to teach myself coding.
+                </p>
+            </div>
+            <!-- links to the subsites resources, projects -->
+            <div class="icon-links-div">
+                <div class="icon-link-div">
+                    <a href="HTML/projects.html" class="icon-link">
+                        <div>
+                            <div class="page-link-text">
+                                Projects
+                            </div>
+                            <div class="icon-div">
+                                <img class="icon" src="assets/images/coding.png" alt="laptop icon">
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="icon-link-div">
+                    <a href="HTML/resources.html" class="icon-link">
                         <div class="page-link-text">
-                            Projects
+                            Resources
                         </div>
-                        <div class="icon-div">
-                            <img class="icon" src="assets/images/coding.png" alt="laptop icon">
+                        <div>
+                            <img class="icon" src="assets/images/online_learning_icon.svg" alt="laptop icon">
                         </div>
-                    </div>
-                </a>
-            </div>
-            <div class="icon-link-div">
-                <a href="HTML/resources.html" class="icon-link">
-                    <div class="page-link-text">
-                        Resources
-                    </div>
-                    <div>
-                        <img class="icon" src="assets/images/online_learning_icon.svg" alt="laptop icon">
-                    </div>
-                </a>
+                    </a>
+                </div>
             </div>
         </div>
-    </div>
-    <div id="footer-div">
         <footer>
             <!-- social media links -->
             <div id="social-links">
@@ -101,13 +101,15 @@
 </html>
 
 <!--
+BUG fix: consistent style for subsite caption (like on index.html)
+BUG fix: footer overlaps with main-div
 BUG fix: fix mailto link
 BUG fix: make sorting algorithm visualization work
 
 TODO: add social icons to all sites:
     - index                 ✔
     - projects              ✔
-    - resources
+    - resources             ✔
     - sort_algos_visual
     - tenCSSLayouts
 
