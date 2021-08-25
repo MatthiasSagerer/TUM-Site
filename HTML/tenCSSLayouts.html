@@ -1,11 +1,14 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <title>10 modern layouts in 1 line of CSS</title>
-        <link rel="stylesheet" href="../CSS/tenCSSLayouts.css" />
-    </head>
-    <body>
+
+<head>
+    <meta charset="utf-8" />
+    <title>10 modern layouts in 1 line of CSS</title>
+    <link rel="stylesheet" href="../CSS/tenCSSLayouts.css" />
+</head>
+
+<body>
+    <div id="page-container">
         <!-- navigation bar on the top -->
         <ul class="nav">
             <li class="navli" id="tumlogo">
@@ -33,7 +36,9 @@
                 it's corresponding Youtube-video:
             </p>
             <div id="tutorialvideo">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/qm0IfG1GyZU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/qm0IfG1GyZU" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
             </div>
             <!-- examples for CSS -->
             <div class="excontainer">
@@ -82,8 +87,8 @@
                                 }<br />
                                 <br />
                                 .ex2 .box {<br />
-                                &nbsp;&nbsp;&nbsp;&nbsp;flex: 1 1 150px; /*  Stretching: */<br />
-                                &nbsp;&nbsp;&nbsp;&nbsp;flex: 0 1 150px; /*  No stretching: */<br />
+                                &nbsp;&nbsp;&nbsp;&nbsp;flex: 1 1 150px; /* Stretching: */<br />
+                                &nbsp;&nbsp;&nbsp;&nbsp;flex: 0 1 150px; /* No stretching: */<br />
                                 &nbsp;&nbsp;&nbsp;&nbsp;margin: 5px;<br />
                                 }
                             </div>
@@ -100,7 +105,8 @@
                     <div class="democontainer">
                         <div id="ex3">
                             <div class="purple" contenteditable>Min: 150px / Max: 25%</div>
-                            <div class=" orange" contenteditable>This element takes the second grid position (1fr), meaning it takes up the rest of the remaining space.</div>
+                            <div class=" orange" contenteditable>This element takes the second grid position (1fr),
+                                meaning it takes up the rest of the remaining space.</div>
                         </div>
                     </div>
                     <div class="codesupersection">
@@ -116,7 +122,8 @@
                             </div>
                         </div>
                     </div>
-                </div>
+        
+            </div>
             </div>
             <div class="excontainer">
                 <h3>04. Pancake Stack</h3>
@@ -259,7 +266,8 @@
                                 .ex7 .parent {<br />
                                 &nbsp;&nbsp;&nbsp;&nbsp;display: grid;<br />
                                 &nbsp;&nbsp;&nbsp;&nbsp;grid-gap: 1rem;<br />
-                                &nbsp;&nbsp;&nbsp;&nbsp;grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));<br />
+                                &nbsp;&nbsp;&nbsp;&nbsp;grid-template-columns: repeat(auto-fit, minmax(150px,
+                                1fr));<br />
                                 }
                             </div>
                         </div>
@@ -274,15 +282,20 @@
                 <div class="excontent">
                     <div class="democontainer">
                         <div id="ex8">
-                            <div class="orange"><h3 contenteditable>Title - Card 1</h3>
+                            <div class="orange">
+                                <h3 contenteditable>Title - Card 1</h3>
                                 <p contenteditable>Medium length description with a few more words here.</p>
                                 <div class="coral visual"></div>
                             </div>
-                            <div class="orange"><h3 contenteditable>Title - Card 3</h3>
-                                <p contenteditable>Long description. Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                            <div class="orange">
+                                <h3 contenteditable>Title - Card 3</h3>
+                                <p contenteditable>Long description. Lorem ipsum dolor sit, amet consectetur
+                                    adipisicing
+                                    elit.</p>
                                 <div class="blue visual"></div>
                             </div>
-                            <div class="orange"><h3 contenteditable>Title - Card 3</h3>
+                            <div class="orange">
+                                <h3 contenteditable>Title - Card 3</h3>
                                 <p contenteditable>Short description.</p>
                                 <div class="green visual"></div>
                             </div>
@@ -327,9 +340,11 @@
                 <div class="excontent">
                     <div class="democontainer">
                         <div id="ex9">
-                            <div class="green"><h1 contenteditable>Title Here</h1>
+                            <div class="green">
+                                <h1 contenteditable>Title Here</h1>
                                 <div class="blue visual" contenteditable></div>
-                                <p contenteditable> Descriptive Text. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed est error repellat veritatis.</p>
+                                <p contenteditable> Descriptive Text. Lorem ipsum dolor sit amet, consectetur
+                                    adipisicing elit. Sed est error repellat veritatis.</p>
                             </div>
                         </div>
                     </div>
@@ -398,5 +413,33 @@
                 </div>
             </div>
         </div>
-    </body>
+        <footer>
+            <!-- social media links -->
+            <div id="social-links">
+                <div>
+                    <a target="_blank" href="https://github.com/MatthiasSagerer">
+                        <img class="footer-icon" src="../assets/images/GitHub-Mark-120px-plus.png" alt="Gmail Icon">
+                    </a>
+                </div>
+                <div>
+                    <a target="_blank"
+                        href="https://www.linkedin.com/in/matthias-sagerer-97976a215/?msgControlName=reply_to_sender&msgConversationId=2-MzFjNmU5N2ItMmY2NC00NzY4LWE1YWMtNjk4MGMyOTBlMzc0XzAxMA%3D%3D&msgOverlay=true">
+                        <img class="footer-icon" src="../assets/images/1024px-Linkedin_icon.svg.png"
+                            alt="Gmail Icon">
+                    </a>
+                </div>
+                <div>
+                    <a href="mailto:matthiass.dev@gmail.com">
+                        <img class="footer-icon" src="../assets/images/gmail.png" alt="Gmail Icon">
+                    </a>
+                </div>
+                <div>
+                    <a target="_blank" href="https://www.instagram.com/matzee_/">
+                        <img class="footer-icon" src="../assets/images/Instagram_icon.png" alt="Instagram Icon">
+                    </a>
+                </div>
+            </div>
+        </footer>
+</body>
+
 </html>
