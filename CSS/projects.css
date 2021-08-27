@@ -29,7 +29,7 @@ body {
   overflow: hidden;
   height: 50px;
   line-height: 50px;
-  margin: -8px -8px 0 -8px;
+  margin: 0px;
   box-shadow: 5px 0 20px -10px hsl(187, 97%, 0%);
   position: fixed;
   z-index: 1;
@@ -54,7 +54,7 @@ body {
 
 footer {
   background-color: hsl(57, 95%, 77%);
-  padding: 35px 0px 35px 0px;
+  padding: 35px 0 35px 0;
   display: flex;
   align-items: center;
   justify-content: center;
