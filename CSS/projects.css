@@ -6,6 +6,9 @@ html {
 
 body {
   font-family: system-ui, sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 #page-container {
   position: relative;
@@ -13,10 +16,10 @@ body {
 }
 
 #main {
-  max-width: 950px;
+  max-width: 1200px;
   margin: auto;
   background: white;
-  padding: 10px;
+  padding-bottom: 10rem;
 }
 
 #caption {

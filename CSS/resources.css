@@ -17,9 +17,10 @@ body {
 }
 
 #main {
-  display: grid;
-  place-items: center;
-  padding-bottom: 2.5rem;
+  max-width: 1200px;
+  margin: auto;
+  background: white;
+  padding-bottom: 10rem;
 }
 
 #caption {
@@ -154,4 +155,5 @@ footer {
 
 #list-of-resources {
   width: 70%;
+  margin: auto;
 }
