@@ -19,12 +19,11 @@ body {
 #main {
   max-width: 1200px;
   margin: auto;
-  background: white;
-  padding-bottom: 10rem;
+  padding-bottom: 7rem;
 }
 
 #caption {
-  margin-top: 50px;
+  margin-top: 80px;
 }
 
 .nav {
@@ -106,9 +105,9 @@ footer {
   margin: 0 auto;
 }
 
-#intro {
+.centered {
   width: 75%;
-  margin: 0 auto 20px;
+  margin: 0 auto;
 }
 
 /* Accordion start here source: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_accordion_symbol */
@@ -156,4 +155,5 @@ footer {
 #list-of-resources {
   width: 70%;
   margin: auto;
+  margin-top: 35px;
 }
