@@ -1,32 +1,5 @@
-﻿body,
-html {
-  margin: 0;
-  padding: 0;
-}
-
-body {
+﻿body {
   font-family: system-ui, sans-serif;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
-#page-container {
-  position: relative;
-  min-height: 100vh;
-  background-color: #ffffff;
-  opacity: 1;
-  background-image: radial-gradient(#3070b3 1px, transparent 1px),
-    radial-gradient(#3070b3 1px, #ffffff 1px);
-  background-size: 40px 40px;
-  background-position: 0 0, 20px 20px;
-}
-
-#main {
-  max-width: 1200px;
-  margin: auto;
-  padding: 20px 0 7rem 0;
-  background-color: white;
 }
 
 .centered {
@@ -35,8 +8,7 @@ body {
 }
 
 #caption {
-  margin-top: 80px;
-  padding: 25px;
+  margin-top: 50px;
 }
 
 .nav {
@@ -45,7 +17,7 @@ body {
   overflow: hidden;
   height: 50px;
   line-height: 50px;
-  margin: 0px;
+  margin: -8px -8px 0 -8px;
   box-shadow: 5px 0 20px -10px hsl(187, 97%, 0%);
   position: fixed;
   z-index: 1;
@@ -68,34 +40,9 @@ body {
   background-color: #e0e0e0;
 }
 
-footer {
-  background-color: hsl(57, 95%, 77%);
-  padding: 35px 0 35px 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  height: 2.5rem;
-}
-
-.footer-icon {
-  width: 40px;
-  margin: 30px 60px;
-}
-
-#social-links {
-  display: flex;
-  justify-content: center;
-}
-
-.footer-icon:hover {
-  width: 44px;
-  margin: 28px 58px;
-  background: rgba(0, 0, 0, 0);
-  box-shadow: 0 0 25px -10px hsl(187, 97%, 0%);
+#main {
+  display: grid;
+  place-items: center;
 }
 
 #tumlogo {
@@ -125,8 +72,8 @@ footer {
 }
 
 .icon-link-div:hover {
-  background-color: #f4f4f4;
-  box-shadow: 0 0 25px -10px hsl(187, 97%, 0%);
+    background-color: #f4f4f4;
+    box-shadow: 0 0 25px -10px hsl(187, 97%, 0%);
 }
 
 .icon-link {
@@ -148,4 +95,20 @@ footer {
 
 #credit {
   font-size: 10px;
+}
+
+.footer-icon {
+  width: 40px;
+  margin: 30px 60px;
+}
+
+#social-links {
+  display: flex;
+}
+
+.footer-icon:hover {
+  width: 44px;
+  margin: 28px 58px;
+  background-color: #f4f4f4;
+  box-shadow: 0 0 25px -10px hsl(187, 97%, 0%);
 }

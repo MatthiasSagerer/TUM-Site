@@ -1,165 +1,111 @@
-﻿body,
-html {
-  margin: 0;
-  padding: 0;
-}
-
-body {
-  font-family: system-ui, sans-serif;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
-#page-container {
-  position: relative;
-  min-height: 100vh;
-  background-color: #ffffff;
-opacity: 1;
-background-image:  radial-gradient(#3070b3 1px, transparent 1px), radial-gradient(#3070b3 1px, #ffffff 1px);
-background-size: 40px 40px;
-background-position: 0 0,20px 20px;
-}
-
-#main {
-  max-width: 1200px;
-  margin: auto;
-  padding-bottom: 7rem;
-  background-color: white;
+﻿body {
+    font-family: system-ui, sans-serif;
 }
 
 #caption {
-  margin-top: 80px;
+    margin-top: 50px;
 }
 
 .nav {
-  list-style-type: none;
-  background-color: #f4f4f4;
-  overflow: hidden;
-  height: 50px;
-  line-height: 50px;
-  margin: 0px;
-  box-shadow: 5px 0 20px -10px hsl(187, 97%, 0%);
-  position: fixed;
-  z-index: 1;
-  width: 100%;
+    list-style-type: none;
+    background-color: #f4f4f4;
+    overflow: hidden;
+    height: 50px;
+    line-height: 50px;
+    margin: -8px -8px 0 -8px;
+    box-shadow: 5px 0 20px -10px hsl(187, 97%, 0%);
+    position: fixed;
+    z-index: 1;
+    width: 100%
 }
 
 .navlink {
-  text-decoration: none;
-  color: black;
+    text-decoration: none;
+    color: black;
 }
 
 .navli {
-  margin: 0 0 200px 0;
-  padding: 5px;
-  height: 100%;
-  float: left;
+    margin: 0 0 200px 0;
+    padding: 5px;
+    height: 100%;
+    float: left;
 }
 
-.navli:hover {
-  background-color: #e0e0e0;
-}
+    .navli:hover {
+        background-color: #e0e0e0;
+    }
 
-footer {
-  background-color: hsl(57, 95%, 77%);
-  padding: 35px 0 35px 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  height: 2.5rem;
-}
-
-.footer-icon {
-  width: 40px;
-  margin: 30px 60px;
-}
-
-#social-links {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.footer-icon:hover {
-  width: 44px;
-  margin: 28px 58px;
-  background: rgba(0, 0, 0, 0);
-  box-shadow: 0 0 25px -10px hsl(187, 97%, 0%);
+#main {
+    display: grid;
+    place-items: center;
 }
 
 #tumlogo {
-  padding: 5px;
-  position: relative;
-  right: 30px;
-  margin: 0px 15px 0px -10px;
+    padding: 5px;
+    position: relative;
+    right: 30px;
+    margin: 0px 15px 0px -10px;
 }
 
 .centered-text {
-  text-align: center;
+    text-align: center;
 }
 
 .squaredlist {
-  list-style-type: square;
+    list-style-type: square;
 }
 
 .centered {
-  width: 75%;
-  margin: 0 auto;
+    width: 75%;
+    margin: 0 auto;
 }
 
-.centered {
-  width: 75%;
-  margin: 0 auto;
+#intro {
+    width: 75%;
+    margin: 0 auto 20px;
 }
 
 /* Accordion start here source: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_accordion_symbol */
 
 .accordion {
-  background-color: #eee;
-  color: #444;
-  cursor: pointer;
-  padding: 18px;
-  width: 100%;
-  border: none;
-  text-align: left;
-  outline: none;
-  font-size: 15px;
-  transition: 0.4s;
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
 }
 
-.active,
-.accordion:hover {
-  background-color: #ccc;
-}
+    .active, .accordion:hover {
+        background-color: #ccc;
+    }
 
-.accordion:after {
-  content: "\002B";
-  color: #777;
-  font-weight: bold;
-  float: right;
-  margin-left: 5px;
-}
+    .accordion:after {
+        content: '\002B';
+        color: #777;
+        font-weight: bold;
+        float: right;
+        margin-left: 5px;
+    }
 
 .active:after {
-  content: "\2212";
+    content: "\2212";
 }
 
 .panel {
-  padding: 0 18px;
-  background-color: white;
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.2s ease-out;
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
 }
 
 /* Accordion ends here */
 
 #list-of-resources {
-  width: 70%;
-  margin: auto;
-  margin-top: 35px;
+    width: 70%;
 }

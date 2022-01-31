@@ -1,48 +1,42 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="utf-8" />
     <title>matthias.sagerer-TUM-Homepage</title>
     <link rel="stylesheet" href="CSS/index.css" />
 </head>
-
 <body>
-    <div id="page-container">
-        <!-- navigation bar on the top -->
-        <ul class="nav">
-            <li class="navli" id="tumlogo">
-                <a target="_blank" href="https://www.tum.de/">
-                    <img alt="Logo of the Technical University of Munich" src="assets/images/tum-logo.svg">
-                </a>
-            </li>
-            <li class="navli">
-                <a class="navlink" href="index.html">Home</a>
-            </li>
-            <li class="navli">
-                <a class="navlink" href="HTML/projects.html">Projects</a>
-            </li>
-            <li class="navli">
-                <a class="navlink" href="HTML/resources.html">Resources</a>
-            </li>
-        </ul>
-        <div id="main">
-            <!-- short description of the site -->
-            <h1 id="caption" class="centered">Hello World!</h1>
-            <div>
-                <p class="centered">
-                    My name is Matze and I'm a physics bachelor student at TUM.
-                    <br />Welcome to the site, where I'll share my journey of exploring my new passion for programming.
-                    <br />Here, you can find the things I picked up in tutorials, some of my self-written projects
-                    and the resources, that I used to teach myself coding.
-                </p>
-            </div>
-            <!-- links to the subsites resources, projects -->
-            <div class="icon-links-div">
+    <ul class="nav">
+        <li class="navli" id="tumlogo">
+            <a target="_blank" href="https://www.tum.de/">
+                <img alt="Logo of the Technical University of Munich" src="assets/images/tum-logo.svg">
+            </a>
+        </li>
+        <li class="navli">
+            <a class="navlink" href="index.html">Home</a>
+        </li>
+        <li class="navli">
+            <a class="navlink" href="HTML/projects.html">Projects</a>
+        </li>
+        <li class="navli">
+            <a class="navlink" href="HTML/resources.html">Resources</a>
+        </li>
+    </ul>
+    <div id="main">
+        <h1 id="caption" class="centeredtext">Hello World!</h1>
+        <div>
+            <p class="centered">
+                My name is Matze and I'm a physics bachelor student at TUM.
+                <br />Welcome to the site, where I'll share my journey of exploring my new passion for programming.
+                <br />Here, you can find the things I picked up in tutorials, some of my self-written projects
+                and the resources, that I used to teach myself coding.
+            </p>
+        </div>
+        <div class="icon-links-div">
                 <div class="icon-link-div">
                     <a href="HTML/projects.html" class="icon-link">
                         <div>
-                            <div class="page-link-text">
+                            <div class ="page-link-text">
                                 Projects
                             </div>
                             <div class="icon-div">
@@ -51,20 +45,18 @@
                         </div>
                     </a>
                 </div>
-                <div class="icon-link-div">
-                    <a href="HTML/resources.html" class="icon-link">
-                        <div class="page-link-text">
-                            Resources
-                        </div>
-                        <div>
-                            <img class="icon" src="assets/images/online_learning_icon.svg" alt="laptop icon">
-                        </div>
-                    </a>
-                </div>
+            <div class="icon-link-div">
+                <a href="HTML/resources.html" class="icon-link">
+                    <div class="page-link-text">
+                        Resources
+                    </div>
+                    <div>
+                        <img class="icon" src="assets/images/online_learning_icon.svg" alt="laptop icon">
+                    </div>
+                </a>
             </div>
         </div>
         <footer>
-            <!-- social media links -->
             <div id="social-links">
                 <div>
                     <a target="_blank" href="https://github.com/MatthiasSagerer">
@@ -72,8 +64,7 @@
                     </a>
                 </div>
                 <div>
-                    <a target="_blank"
-                        href="https://www.linkedin.com/in/matthias-sagerer-97976a215/?msgControlName=reply_to_sender&msgConversationId=2-MzFjNmU5N2ItMmY2NC00NzY4LWE1YWMtNjk4MGMyOTBlMzc0XzAxMA%3D%3D&msgOverlay=true">
+                    <a target="_blank" href="https://www.linkedin.com/in/matthias-sagerer-97976a215/?msgControlName=reply_to_sender&msgConversationId=2-MzFjNmU5N2ItMmY2NC00NzY4LWE1YWMtNjk4MGMyOTBlMzc0XzAxMA%3D%3D&msgOverlay=true">
                         <img class="footer-icon" src="assets/images/1024px-Linkedin_icon.svg.png" alt="Gmail Icon">
                     </a>
                 </div>
@@ -88,45 +79,27 @@
                     </a>
                 </div>
             </div>
-            <!-- credit for resources icon -->
+            
             <div id="credit" class="centered-text">
                 Resources Icon made by
                 <a target="_blank" href="https://www.flaticon.com/authors/prettycons" title="prettycons">prettycons</a>
                 from <a target="_blank" href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>
             </div>
-        </footer>
-    </div>
-</body>
 
+        </footer>
+            
+    </div>
+        
+</body>
 </html>
 
 <!--
-BUG fix: consistent style for subsite caption (like on index.html)
-BUG fix: footer overlaps with main-div
+
 BUG fix: fix mailto link
-BUG fix: make sorting algorithm visualization work
-BUG fix: make footers in consistent height
-
-TODO: add social icons to all sites:
-    - index                 (✔)
-    - projects              (✔)
-    - resources             (✔)
-    - sort_algos_visual     (✔)
-    - tenCSSLayouts
-
-TODO: add colour to footer on all sites:
-    - index
-    - projects
-    - resources
-    - sort_algos_visual
-    - tenCSSLayouts
-
 
 TODO: Add code image to main page
-TODO: work off TODOs in README.md
 TODO: nice background images for projects site
 TODO: nice background images for resources site
-TODO: add copyright or something to the bottom of every page
 TODO: better looking bullet points for projects and resources (e.g. images for main bullet points)
 
 CSS
@@ -136,15 +109,12 @@ TODO: movement through scrolling (3D-Effect)
 
 
 BIGGER PROJECTS 
-TODO: login system for admin (me) with special access:
-        - tool for including new files and resources to the site without editing HTML code directly
-          (maybe JavaScript and a database where the content is pulled from)
-        - stats for the site (total webiste view count, view history, views sorted by "subsite")
+TODO: tool for including new files and resources to the site without editing HTML code directly
+      (maybe JavaScript and a database where the content is pulled from)
 TODO: contact form
 
 OPTIONAL STUFF
 TODO: a site for (each) individual project with some explanation (like) copy of README file
         -> Follow up: Pop up menu for projects in the nav bar with links to project sites
 TODO: Dark mode
-
 -->

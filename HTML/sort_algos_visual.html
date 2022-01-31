@@ -2,11 +2,10 @@
 <html>
 <head>
     <meta charset="utf-8" />
-    <title>Sorting Algorithms Visualization</title>
+    <title>Sorting Algorithms Viszualization</title>
     <link rel="stylesheet" href="../CSS/sort_algos_visual.css" />
 </head>
 <body>
-    <!-- navigation bar on the top -->
     <ul class="nav">
         <li class="navli" id="tumlogo">
             <a target="_blank" href="https://www.tum.de/">
@@ -24,12 +23,10 @@
         </li>
     </ul>
     <div id="main">
-        <!-- short description of the site -->
         <h1 id="caption" class="centered-text">Sorting Algorithms Visualization</h1>
         <p>
-            On this site, I visualized some sorting algorithms with rectangles of different sizes.
+            On this site, I visualized some sorting algorithoms with rectangles of different sizes.
         </p>
-        <!-- settings -->
         <div id="settings">
             <div class="dropdown">
                 <button class="drowbtn" id="algorithm">Choose the Algorithm</button>
@@ -63,27 +60,24 @@
                 Animation Speed: <span id="speed"></span>
                 <input type="range" min="1" max="10" value="5" id="speedslider">
             </div>
-            <script src="../scripts/sort_algos_visual.js"></script>
+            <script src="../scripts/sorting_algorithms_visualization.js"></script>
         </div>
-        <!-- canvas for the visualization -->
         <div id="canvDiv">
             <canvas id="canv" height="500" width="800"></canvas>
         </div>
-        <script src="../scripts/sort_algos_visual.js"></script>
+        <script src="../scripts/sorting_algorithms_visualization.js"></script>
+        <!--
+    TODO:
+        - watching canvas tutorial: https://www.youtube.com/watch?v=EO6OkltgudE
+        - Bugfix: Animation (clearRect and drawRects)
+        - Bugfix: Cycle Sort Function
+        - operations counter
+        - adding algoritms to js & html: Heap, Smooth, Shell, Cycle, Selection, Insertion, Gnome, Comb, Cocktail, Oddeven, Radix
+        - research different algorithms (http://sorting.at/)
+        - start algorithm with start
+        - change Speed with speed slider
+       (- adding bingo sort)
+    -->
     </div>
 </body>
 </html>
-
-
-<!--
-TODO:
-    - watching canvas tutorial: https://www.youtube.com/watch?v=EO6OkltgudE
-    - Bugfix: Animation (clearRect and drawRects)
-    - Bugfix: Cycle Sort Function
-    - operations counter
-    - adding algorithms to js & html: Heap, Smooth, Shell, Cycle, Selection, Insertion, Gnome, Comb, Cocktail, Oddeven, Radix
-    - research different algorithms (http://sorting.at/)
-    - start algorithm with start
-    - change Speed with speed slider
-   (- adding bingo sort)
--->
