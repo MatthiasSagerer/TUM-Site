@@ -62,4 +62,9 @@
 .gh-icon {
     width: 20px;
     margin: 0px;
-  }
+}
+
+#iframe-wrapper {
+    display: flex;
+    justify-content: center;
+}
