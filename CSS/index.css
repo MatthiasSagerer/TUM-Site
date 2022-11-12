@@ -112,3 +112,13 @@
   background-color: #f4f4f4;
   box-shadow: 0 0 25px -10px hsl(187, 97%, 0%);
 }
+
+#portrait {
+  width: 25%;
+  margin: 0 auto;
+}
+
+#portrait-div {
+  width: 75%;
+  margin: 0 auto;
+}
